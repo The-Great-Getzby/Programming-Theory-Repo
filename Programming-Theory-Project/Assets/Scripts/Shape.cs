@@ -11,6 +11,8 @@ using UnityEngine.UI;
     protected string greeting { get; private set; } = "Hello"; // a shape's greeting, starts off the debug log display
     protected Color color; // a shape's color
     protected Vector3 rotVector; // a Shape's rotation axis
+
+    //ENCAPSULATION
     private float m_rotDegree = 90.0f; // a shape's rotation amount
     public float rotDegree
     {
@@ -45,6 +47,7 @@ using UnityEngine.UI;
         ShapeSpeak(); // fire custom method
     }
 
+    //ABSTRACTION
     public virtual void ShapeSpeak() // custom method
     {
         transform.Rotate(rotVector, rotDegree); // rotate the shape
